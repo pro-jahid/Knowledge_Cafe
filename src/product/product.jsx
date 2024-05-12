@@ -4,7 +4,7 @@ const Product = (props) => {
     return (
         <div className="grid grid-cols-3 gap-4">
             <div className="col-span-2">
-            <img className="w-full" src={img} alt="" />
+            <img className="w-full rounded-xl py-8" src={img} alt="" />
             <div className="flex justify-between items-center py-5">
                 <div className="flex items-center gap-x-4">
                     <img className="" src={userImg} alt="" />
