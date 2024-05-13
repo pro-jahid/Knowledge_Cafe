@@ -1,4 +1,6 @@
-
+import { GoBookmark } from "react-icons/go";
+// import { GoBookmarkFill } from "react-icons/go";
+import Cart from "../Cart/Cart";
 const Product = (props) => {
     const {name,userImg,time,date,img,profession} =props.carts;
     return (
@@ -10,18 +12,19 @@ const Product = (props) => {
                     <img className="" src={userImg} alt="" />
                     <div>
                         <h5 className="text-3xl">{name}</h5>
-                        <h6>{date}</h6>
+                        <h6 className="text-gray-500">{date}</h6>
                     </div>
                 </div>
-                <div>
-                    <p>{time}</p>
+                <div className="flex gap-4">
+                    <p className="text-gray-500">{time}</p>
+                    <button ><GoBookmark className="text-2xl text-gray-500"/></button>
                 </div>
             </div>
             <h2 className="text-5xl py-5 font-bold">{profession}</h2>
-            <button className="py-4">Mark As Read</button>
+            <button className="py-4 text-purple-500">Mark As Read</button>
             </div>
             <div>
-
+                <Cart></Cart>
             </div>
         </div>
     );
